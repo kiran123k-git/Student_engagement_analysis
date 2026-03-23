@@ -90,7 +90,7 @@ streamlit run app.py
 - Groq API key (optional, for AI features)
 
 ### **Installation Details**
-See [QUICKSTART.md](QUICKSTART.md) for detailed setup instructions.
+See the installation steps above for detailed setup instructions.
 
 ---
 
@@ -658,8 +658,7 @@ This project is designed for educational institutions.
 
 For questions about the system, refer to:
 - [README.md](README.md) - This file
-- [QUICKSTART.md](QUICKSTART.md) - Get started guide
-- [FILES_INDEX.md](FILES_INDEX.md) - File structure
+- Check the main sections above for specific topics
 
 ---
 
