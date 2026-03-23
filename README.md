@@ -98,11 +98,56 @@ The dashboard will open with sample data (30 students) already loaded. You can i
 - Wellbeing indicators
 - Analytics and trends
 
+---
+
+### **🔑 Optional: Enable AI Features (Natural Language Queries)**
+
+The system works perfectly without this, but AI-powered queries need a Groq API key.
+
+**Step 1: Get Your Free Groq API Key**
+1. Visit [console.groq.com](https://console.groq.com)
+2. Sign up (free account)
+3. Go to "API Keys" section
+4. Copy your API key
+
+**Step 2: Set Environment Variable**
+
+**On macOS/Linux:**
+```bash
+export GROQ_API_KEY="your_api_key_here"
+streamlit run app.py
+```
+
+**On Windows (PowerShell):**
+```powershell
+$env:GROQ_API_KEY="your_api_key_here"
+streamlit run app.py
+```
+
+**Or Create a `.env` file:**
+```bash
+# Create file in project root named .env
+GROQ_API_KEY=your_api_key_here
+```
+
+Then run:
+```bash
+streamlit run app.py
+```
+
+**Step 3: Use AI Features**
+- Go to the "AI Assistant" page
+- Ask natural language questions like:
+  - "Show me at-risk students"
+  - "Who has the best engagement?"
+  - "Generate a report for high performers"
+
 ### **System Requirements**
 - ✅ Python 3.10 or higher
 - ✅ 2GB RAM (minimum)
 - ✅ Internet connection (for first-time setup)
 - ✅ Port 8501 available
+- ⭐ Groq API key (optional, for AI features only)
 
 ### **Don't have Python?**
 1. Download from [python.org](https://www.python.org/downloads/)
