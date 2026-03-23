@@ -68,26 +68,46 @@ Track individual student progress across semesters with:
 
 ## 🚀 Getting Started
 
-### **Quick Start (2 minutes)**
+### **⚡ Quick Start (5 minutes)**
 
+**Step 1: Clone the Repository**
 ```bash
-# 1. Clone/navigate to project
-cd /Users/kirankurapati/Documents/LLMs/student-engagement-analysis
-
-# 2. Install dependencies (first time only)
-pip install -r requirements.txt
-
-# 3. Run the dashboard
-streamlit run app.py
-
-# 4. Open browser to http://localhost:8501
+git clone https://github.com/kiran123k-git/Student_engagement_analysis.git
+cd Student_engagement_analysis
 ```
 
+**Step 2: Install Dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+**Step 3: Run the Application**
+```bash
+streamlit run app.py
+```
+
+**Step 4: Open in Browser**
+- Automatically opens at: `http://localhost:8501`
+- If not, copy-paste the URL from terminal
+
+### **✅ That's it! You're done!**
+
+The dashboard will open with sample data (30 students) already loaded. You can immediately see:
+- Student engagement scores
+- Risk categories
+- Wellbeing indicators
+- Analytics and trends
+
 ### **System Requirements**
-- Python 3.10+
-- 2GB RAM minimum
-- Port 8501 available
-- Groq API key (optional, for AI features)
+- ✅ Python 3.10 or higher
+- ✅ 2GB RAM (minimum)
+- ✅ Internet connection (for first-time setup)
+- ✅ Port 8501 available
+
+### **Don't have Python?**
+1. Download from [python.org](https://www.python.org/downloads/)
+2. During installation, ✅ check "Add Python to PATH"
+3. Then follow steps 1-4 above
 
 ### **Installation Details**
 See the installation steps above for detailed setup instructions.
@@ -637,6 +657,19 @@ This project is designed for educational institutions.
 - LangChain (MIT license)
 - Scikit-learn (BSD license)
 - All open-source libraries
+
+---
+
+## 🆘 Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| **`python: command not found`** | Python not installed. Download from [python.org](https://www.python.org/downloads/) and add to PATH |
+| **`pip: command not found`** | Restart terminal after Python installation |
+| **`ModuleNotFoundError: No module named 'streamlit'`** | Run `pip install -r requirements.txt` again |
+| **`Port 8501 already in use`** | Kill existing process or use: `streamlit run app.py --server.port 8502` |
+| **Dashboard won't open** | Check browser console (F12) or try manually visiting `http://localhost:8501` |
+| **Data not loading** | Ensure CSV files are in `/data/` folder with correct column names |
 
 ---
 
