@@ -6,10 +6,14 @@ Main interactive dashboard for analyzing student engagement metrics,
 identifying at-risk students, and monitoring wellbeing indicators.
 """
 
+# Disable chromadb telemetry BEFORE any imports
+import os
+os.environ['CHROMA_TELEMETRY_IMPL'] = 'none'
+os.environ['OTEL_SDK_DISABLED'] = 'true'
+
 import streamlit as st
 import pandas as pd
 import numpy as np
-import os
 import sys
 from datetime import datetime
 import plotly.graph_objects as go
