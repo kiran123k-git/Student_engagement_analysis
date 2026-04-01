@@ -1044,15 +1044,15 @@ else:
         - "Predict performance for struggling students" → Data-based forecasting
         """)
         
-        # Import AI components
+        # Import AI components (optional - chromadb removed for deployment stability)
+        ai_available = False
         try:
             from ai.ai_assistant import AIAssistant
             from ai.rag_pipeline import perform_rag_retrieval
-            
             ai_available = True
-        except ImportError:
+        except Exception as e:
             ai_available = False
-            st.warning("⚠️ AI components not fully configured. Ensure Groq API key is set.")
+            st.warning(f"⚠️ AI Assistant unavailable on this deployment. All other features work normally.")
         
         # Query input
         user_query = st.text_input(
